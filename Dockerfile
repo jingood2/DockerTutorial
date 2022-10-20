@@ -3,7 +3,6 @@ RUN apt update && \
     apt -y install git && \
     git clone https://github.com/YoongiKim/DockerTutorial.git && \
     pip install flask
-EXPOSE 8000
 WORKDIR /DockerTutorial
 ENTRYPOINT ["python"]
 CMD ["app.py"]
